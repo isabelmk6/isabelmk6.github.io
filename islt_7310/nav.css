@@ -1,12 +1,6 @@
-#topnav {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow: hidden;
-  } 
-
 .li {float: left;
-    list-style-type: none;}
+    list-style-type: none;
+    margin: 0;}
 .li a {
     display: block;
     border-style: ridge;
