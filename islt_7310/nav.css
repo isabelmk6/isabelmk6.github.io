@@ -3,12 +3,14 @@
     padding: 0;
     text-align: center;
     overflow: hidden;
-    background-color: #333;
   } 
+
 .li {float: left;
     list-style-type: none;}
 .li a {
     display: block;
+    border-style: ridge;
+    border-color: #EDE3E9;
     color: #3c005a;
     text-align: center;
     padding: 14px 16px;
