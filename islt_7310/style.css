@@ -1,2 +1,12 @@
 #h1 {font: italic;}
 .h1 {color: #663399;}
+
+ol {
+    list-style-type: circle;
+}
+
+main p:first-child::first-letter{font-weight: bold;}
+
+.indent{
+    text-indent: 10px;
+}
