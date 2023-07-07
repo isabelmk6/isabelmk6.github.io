@@ -26,36 +26,52 @@ Tested:  7/2/2023; Passed on Firefox and Chrome browsers.
     </head>
 
     <body>
+        <nav class="navbar">
+            <div class="logo">AstroIzzy</div>
 
-        <header style="padding-top: 50px;">
-            <h1>Isabel Keene</h1>
-            <h3> Amateur Astrologer</h3>
-        </header>
+            <ol class="nav-links">
+                <div class="options">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li class="learn"><a href="#learn.html">Learn</a>
 
-        <nav>
-            <ol class="li">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="#learn.html">Learn</a>
-                <ol>
-                    <li><a href="#learn.html">Link1</a></li>
-                    <li><a href="#learn.html">Link2</a></li>
-                    <li><a href="#learn.html">Link3</a></li>
-                </ol>
-                </li>
-                <li><a href="resource.html">Resources</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                            <ol class="dropdown">
+                                <li><a href="#learn.html">Link1</a></li>
+                                <li><a href="#learn.html">Link2</a></li>
+                                <li><a href="#learn.html">Link3</a></li>
+                            </ol>
+
+                        </li>
+                        <li><a href="resource.html">Resources</a></li>
+                        <li><a href="#contact.html">Contact</a></li>
+                </div>
             </ol>
         </nav>
 
-        <main>
-            <div>
+        <header class="header">
+            <h1>Isabel Keene</h1>
+            <h3 style="padding-bottom: 20px;"> Amateur Astrologer</h3>
+        </header>
+
+        <main class="main">
+
+            <div class="flex-child" style="padding-bottom: 50px;">
+                <img class="image" src="pics.JPEG" alt="headshot of site author" style="width:475px;height:250px;">
+                <video class="video" controls>
+                    <source src="powtoon.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="flex-child">
                 <p>
-                    <span style="padding:20px;"> </span>Hi, my name is Isabel! I’m a senior at Mizzou and I study biomedical engineering with an emphasis in bioinformatics and a certificate in Information Technology. I’m also studying for a cybersecurity certification, which I plan to have by end of summer. In high school, I graduated as valedictorian of my class.  Right now, I work as an information security intern. I hope to stay in the InfoSec field after I graduate in December. <br> <span style="padding:20px;"> </span> In my free time, I do a range of hobbies. I like to joke that the hobby I love best is <em>finding new hobbies</em>. The ones I do most are piano, astrology, and reading. I also spend a lot of time with my rabbit, Mr. Moopy! My <em>favorite</em> saying to live by is:  
+                    <span style="padding:20px;"> </span>Hi, my name is Isabel! I’m a senior at Mizzou and I study biomedical engineering with an emphasis in bioinformatics and a certificate in Information Technology. I’m also studying for a cybersecurity certification, which I plan to have by end of summer. In high school, I graduated as valedictorian of my class.  Right now, I work as an information security intern. I hope to stay in the InfoSec field after I graduate in December.  
                 </p>
-                <blockquote>
-                    “Feel the fear and <b> do it anyway</b>”
-                </blockquote>
+                <p>
+                    <span style="padding:20px;"> </span> In my free time, I do a range of hobbies. I like to joke that the hobby I love best is <em>finding new hobbies</em>. The ones I do most are piano, astrology, and reading. I also spend a lot of time with my rabbit, Mr. Moopy! My <em>favorite</em> saying to live by is:
+                </p>
+                    <blockquote style="padding-left: 70px; font-size:large; line-height: 1.5;">
+                        “Feel the fear and <b> do it anyway</b>”
+                    </blockquote>
                 <p>
                     It reminds me to step out of my comfort zone and go for what I want!
                 </p>
@@ -63,9 +79,8 @@ Tested:  7/2/2023; Passed on Firefox and Chrome browsers.
             </div>
         </main>
 
-        <footer>
-            <p>imkfkv@umsystem.edu</p>
-            <p>Copyright © 2023 AstroIzzy. All rights reserved.</p>
+        <footer class="footer">
+            <p><span style="padding-right: 250px;" >imkfkv@umsystem.edu</span> Copyright © 2023 AstroByIzzy. All rights reserved.</p>
         </footer>
 
     </body>

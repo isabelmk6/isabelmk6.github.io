@@ -1,5 +1,28 @@
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+li {
+    list-style: none;
+}
+
 #h1 {font: italic;}
 .h1 {color: #663399;}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 ol {
     list-style-type: circle;
@@ -7,6 +30,40 @@ ol {
 
 main p:first-child::first-letter{font-weight: bold;}
 
-.indent{
-    text-indent: 10px;
+footer {
+    bottom: 0;
+    position: absolute;
+    left: 25%;
+}
+
+/* Desktop layout- about page */
+main {
+    display:flex;
+    position: relative;
+}
+
+main div p {
+    font-size:large;
+    line-height: 1.5;
+    padding-top: 15px;
+    margin-right: 15px;
+}
+
+.flex-child {
+    flex: 1;
+    padding: 5px 5px 5px 5px
+}
+
+.flex-child:first-child {
+    margin-left: 35px;
+}
+
+.image {
+    padding: 5px 5px;
+}
+
+.video {
+    width: 500px;
+    height: 250px;
+    padding-top:20px;
 }

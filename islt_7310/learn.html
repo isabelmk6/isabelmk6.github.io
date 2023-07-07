@@ -25,22 +25,26 @@ Tested:  7/2/2023; Passed on Firefox and Chrome browsers.
     </head>
 
     <body>
-        <nav >
+        <nav class="navbar">
+            <div class="logo">AstroByIzzy</div>
 
-            <ol class="li">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#learn.html" class="active">Learn</a>
-                    <ol>
-                        <li><a href="#learn.html">Link1</a></li>
-                        <li><a href="#learn.html">Link2</a></li>
-                        <li><a href="#learn.html">Link3</a></li>
-                    </ol>
-                </li>
-                <li><a href="resource.html">Resources</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+            <ol class="nav-links">
+                <div class="options">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="learn"><a href="#learn.html" class="active">Learn</a>
+
+                            <ol class="dropdown">
+                                <li><a href="#learn.html">Link1</a></li>
+                                <li><a href="#learn.html">Link2</a></li>
+                                <li><a href="#learn.html">Link3</a></li>
+                            </ol>
+
+                        </li>
+                        <li><a href="resource.html">Resources</a></li>
+                        <li><a href="#contact.html">Contact</a></li>
+                </div>
             </ol>
-
         </nav>
 
         <header>
@@ -55,11 +59,8 @@ Tested:  7/2/2023; Passed on Firefox and Chrome browsers.
             
         </main>
 
-        <footer >
-            <div style="padding-top:50px">
-            <p> imkfkv@umsystem.edu </p>
-            <p>Copyright © 2023 AstroIzzy. All rights reserved.</p>
-            </div>
+        <footer class="footer">
+            <p><span style="padding-right: 250px;" >imkfkv@umsystem.edu</span> Copyright © 2023 AstroByIzzy. All rights reserved.</p>
         </footer>
 
     </body>
