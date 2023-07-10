@@ -14,8 +14,8 @@ li {
     list-style: none;
 }
 
-#h1 {font: italic;}
-.h1 {color: #663399;}
+h1 {color: #663399;}
+h2 {font-style: italic;}
 
 header {
     display: flex;
@@ -33,10 +33,15 @@ main p:first-child::first-letter{font-weight: bold;}
 footer {
     bottom: 0;
     position: absolute;
-    left: 25%;
+    left: 30%;
+    display: inline-flex;
 }
 
-/* Desktop layout- about page */
+footer p:first-child {
+    padding-right: 150px;
+}
+
+/* Desktop layout */
 main {
     display:flex;
     position: relative;
@@ -49,21 +54,87 @@ main div p {
     margin-right: 15px;
 }
 
-.flex-child {
+/* ABOUT PAGE LAYOUT */
+.about-flex-child {
     flex: 1;
     padding: 5px 5px 5px 5px
 }
 
-.flex-child:first-child {
+.about-flex-child:first-child {
     margin-left: 35px;
+    padding-bottom: 50px;
 }
 
 .image {
     padding: 5px 5px;
+    width:475px;
+    height:250px;
 }
 
 .video {
     width: 500px;
     height: 250px;
     padding-top:20px;
+}
+
+/* HOME PAGE LAYOUT */
+.index-flex-child {
+    flex: 1;
+    padding: 5px 5px 5px 5px;
+}
+
+.index-flex-child p{
+    margin-left: 35px;
+}
+
+
+
+/* MOBILE RESPONSIVENESS */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+    main div p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+    footer {
+        font-size: 10px;
+        left: 10%;
+        bottom: auto;
+    }
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    main div p {
+        line-height: 1.75;
+        padding: 10px 10px 10px 10px;
+        justify-content:flex-start;
+    }
+    .image {
+        width: 400px;
+        height: 175px;
+    }
+    .video {
+        width: 400px;
+        height: 175px;
+    }
+    .about-flex-child {
+        justify-content: center;
+        margin-left: none;
+        padding-bottom: 10px;
+    }
+    .index-flex-child {
+        flex: 1;
+        padding: 5px 5px 5px 5px;
+    }
+    
+    .index-flex-child p{
+        margin-left: 35px;
+    }
 }
