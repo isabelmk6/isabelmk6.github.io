@@ -14,8 +14,8 @@ li {
     list-style: none;
 }
 
-h1 {color: #663399;}
-h2 {font-style: italic;}
+h1 {color: #A60027;}
+h2 {font-style: italic; color: #A60027}
 
 header {
     display: flex;
@@ -32,15 +32,25 @@ main p:first-child::first-letter{font-weight: bold;}
 
 footer {
     bottom: 0;
+    width: 100%;
     position: absolute;
-    left: 30%;
-    display: inline-flex;
+    display:inline-flex;
+    padding-top: 20px;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
 }
-
 footer p:first-child {
-    padding-right: 150px;
+    margin-left: 20%
 }
-
+footer p::after {
+    padding-right: 110px;
+    content: "";
+    flex-shrink: 1;
+}
+.icons {
+    flex-shrink: 1;
+}
 /* Desktop layout */
 main {
     display:flex;
@@ -103,9 +113,15 @@ main div p {
         line-height: 1.75;
     }
     footer {
-        font-size: 10px;
+        font-size: 8px;
         left: 10%;
         bottom: auto;
+        padding-top:15px;
+    }
+    footer p::after {
+        padding-right: 50px;
+        content: "";
+        flex-shrink: 1;
     }
     main {
         flex-direction: column;

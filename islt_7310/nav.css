@@ -3,13 +3,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  background-color: #eabfff;
-  color: #3c005a;
+  background-color: #FFC5D0;
+  color: #A60027;
   top: 0;
 }
 
 .nav-links a {
-  color: #3c005a;
+  color: #821D30;
 }
 
 /* LOGO */
@@ -48,7 +48,7 @@
 }
 
 .dropdown {
-  background-color: #eabfff;
+  background-color: #FFC5D0;
   position: absolute;
   display: none;
   top: 100%;
