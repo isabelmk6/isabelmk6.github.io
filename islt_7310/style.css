@@ -1,9 +1,13 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
 /* general styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Roboto, serif;
 }
   
 a {
@@ -152,5 +156,67 @@ main div p {
     
     .index-flex-child p{
         margin-left: 35px;
+    }
+}
+
+@media print {
+    .navbar,
+    .logo,
+    .nav-links,
+    .options,
+    .dropdown,
+    .about-flex-child p:last-child,
+    .footer img,
+    video {
+        display: none;
+    }
+
+    body {
+        font-family: Roboto, serif;
+        font-size: 12pt;
+        line-height: 24pt;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        color: #000;
+    }
+
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main div p {
+        line-height: 1.5;
+        padding: 5px 5px 5px 5px;
+    }
+
+    blockquote {
+        font-size: 18pt;
+        line-height: 1.25;
+    }
+
+    .footer {
+        font-size: 10pt;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    footer p:first-child {
+        margin: 0;
+    }
+    
+    footer p::after{
+        padding-right: 20px;
+    }
+/* 
+    footer p:first-child {
+        margin-right: 5%
+    } */
+
+    @page {
+        margin: 1in;
     }
 }
