@@ -52,8 +52,11 @@ footer p::after {
     content: "";
     flex-shrink: 1;
 }
-.icons {
+.icon {
     flex-shrink: 1;
+}
+.icon:hover {
+    transform: scale(1.25);
 }
 /* Desktop layout */
 main {
