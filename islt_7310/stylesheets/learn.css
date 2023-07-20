@@ -1,0 +1,132 @@
+/* STYLING ASTROLOGY SIGN PAGE */
+.signs {
+  display: grid;
+  grid: auto / repeat(2, 1fr);
+  font-size: 14pt;
+  margin: auto;
+  position: relative;
+}
+
+.signs div {
+  padding: 1rem;
+  grid-column: span 1;
+}
+
+.signs div:nth-child(1) p{
+  font-size: 18pt;
+}
+
+.signs div:nth-child(5) {
+  grid-column: span 2;
+}
+
+.signs div:nth-last-child(1),
+.signs div:nth-last-child(2) {
+  padding-bottom: 50px
+}
+
+.signs img {
+  object-fit: contain;
+  width: 75%;
+  height: 100%;
+}
+
+/* STYLING PLANET PAGE */
+.planets {
+  display: grid;
+  grid: auto / repeat(2, 1fr);
+  font-size: 14pt;
+  margin: auto;
+  position: relative;
+}
+
+.planets div {
+  padding: 1rem;
+  grid-column: span 1;
+}
+
+.planets div p{
+  height: fit-content;
+}
+
+.planets div:nth-last-child(1) {
+  grid-column: span 2;
+  padding-bottom: 50px;
+}
+
+.planets div:nth-child(1) p{
+  font-size: 16pt;
+}
+
+.planets img {
+  object-fit: contain;
+  width: 75%;
+}
+
+/* STYLING HOUSES PAGE */
+.houses {
+  display: grid;
+  grid: auto / repeat(2, 1fr);
+  font-size: 14pt;
+  margin: auto;
+  position: relative;
+}
+
+.houses div {
+  padding: 1rem;
+  grid-column: span 1;
+}
+
+.houses div p{
+  height: fit-content;
+}
+
+.houses div:nth-last-child(1) {
+  grid-column: span 2;
+  padding-bottom: 50px;
+}
+
+.houses div:nth-child(1) p{
+  font-size: 16pt;
+  padding-top: 75px;
+}
+
+.houses img {
+  object-fit: contain;
+  width: 70%;
+}
+
+/* STYLING BIRTH CHART PAGE */
+.chart {
+  display: grid;
+  grid: auto / repeat(2, 1fr);
+  font-size: 14pt;
+  margin: auto;
+  position: relative;
+}
+
+.chart div {
+  padding: 1rem;
+  grid-column: span 1;
+}
+
+.chart div p{
+  height: fit-content;
+  padding-top: 20px;
+}
+
+.chart div:nth-child(1){
+  grid-column: span 2;
+}
+
+.chart div:nth-last-child(1),
+.chart div:nth-last-child(2)
+ {
+  grid-column: span 2;
+  padding-bottom: 50px;
+}
+
+.chart img {
+  object-fit: contain;
+  width: 70%;
+}

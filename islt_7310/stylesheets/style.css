@@ -1,6 +1,12 @@
 @font-face {
     font-family: Roboto;
-    src: url(Roboto-Regular.ttf);
+    src: url(../media/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../media/Roboto-Bold.ttf);
+    font-weight: bold;
 }
 /* general styles */
 * {
@@ -9,12 +15,18 @@
     box-sizing: border-box;
     font-family: Roboto, serif;
 }
-  
+
+ul li {
+    margin: 1em;
+    list-style: circle outside;
+    display: list-item;
+}
+
 a {
     text-decoration: none;
 }
   
-li {
+ol {
     list-style: none;
 }
 
@@ -28,21 +40,22 @@ header {
     flex-direction: column;
 }
 
-ol {
-    list-style-type: circle;
+.list ol {
+    list-style-type: disc;
 }
 
-main p:first-child::first-letter{font-weight: bold;}
 
 footer {
-    bottom: 0;
+    bottom: 0pt;
+    left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     display:inline-flex;
     padding-top: 20px;
-    background-image: url(background.png);
+    background-image: url(../media/background.png);
     background-size: cover;
-    background-position: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
 }
 footer p:first-child {
     margin-left: 20%
