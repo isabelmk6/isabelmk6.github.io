@@ -16,7 +16,9 @@
   font-size: 18pt;
 }
 
-.signs div:nth-child(5) {
+.signs div:nth-child(5),
+.signs div:nth-child(3),
+.signs div:nth-child(4) {
   grid-column: span 2;
 }
 
@@ -29,6 +31,34 @@
   object-fit: contain;
   width: 75%;
   height: 100%;
+}
+
+.signs table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.signs table thead {
+  background-color: #FFC5D0;
+}
+
+.signs table tbody tr:nth-child(even) {
+  background-color: #FFE3ED;
+}
+
+.signs table th,
+.signs table td {
+  padding: 12px 15px;
+}
+
+.signs table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.signs table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFC5D0;
 }
 
 /* STYLING PLANET PAGE */
@@ -129,4 +159,93 @@
 .chart img {
   object-fit: contain;
   width: 70%;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 768px) {
+  .signs{
+    grid: 1fr / repeat(1, 1fr);
+    font-size: 12pt;
+  }
+
+  .signs div:nth-child(1) p{
+  font-size: 14pt;
+  }
+
+  .signs div {
+  grid-column: span 1;
+  }
+
+  .signs img {
+  object-fit: contain;
+  width: 70%;
+  height: 85%;
+  }
+
+  .planets{
+    grid: auto / repeat(1, 1fr);
+    font-size: 12pt;
+  }
+
+  .planets div:nth-child(1) p{
+  font-size: 14pt;
+  }
+
+  .planets div:nth-last-child(1) {
+    grid-column: span 1;
+    padding-bottom: 20px;
+  }
+
+  .planets img {
+    object-fit: contain;
+    width: 65%;
+    height: 400;
+  }
+
+  .houses {
+    grid: auto / repeat(1, 1fr);
+    font-size: 12pt;
+  }
+
+  .houses div:nth-last-child(1) {
+    grid-column: span 1;
+    padding-bottom: 20px;
+  }
+  
+  .houses div:nth-child(1) p{
+    font-size: 14pt;
+    padding-top: 30px;
+  }
+  
+  .houses img {
+    object-fit: contain;
+    width: 60%;
+  }
+
+  .chart {
+    grid: auto / repeat(1, 1fr);
+    font-size: 12pt;
+  }
+
+  .chart div:nth-child(1){
+    grid-column: span 1;
+  }
+  
+  .chart div:nth-last-child(1),
+  .chart div:nth-last-child(2)
+   {
+    grid-column: span 1;
+    padding-bottom: 20px;
+  }
+  
+  .chart img {
+    object-fit: contain;
+    width: 60%;
+  }
+  
+  .table-scroller {
+    overflow-x: auto;
+    width: 320px;
+  }
+  
 }
